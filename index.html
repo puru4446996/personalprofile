@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Copperplate&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #F5F5DC; /* Beige background */
+            color: #4A2E2E; /* Maroon text */
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #800000; /* Deep maroon background */
+            color: #F5F5DC; /* Beige text */
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid #4A2E2E; /* Vintage-style border */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #F5F5DC;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #FFE4C4; /* Light beige hover effect */
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        #home h1 {
+            font-size: 2.8rem;
+            color: #800000; /* Deep maroon */
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px #4A2E2E; /* Subtle shadow for a vintage feel */
+        }
+
+        #home p {
+            font-family: 'Copperplate', sans-serif;
+            font-size: 1.4rem;
+            color: #4A2E2E; /* Maroon text */
+            margin-bottom: 2rem;
+        }
+
+        #home .profile-frame {
+            display: inline-block;
+            padding: 15px;
+            background-color: #800000; /* Deep maroon frame */
+            border-radius: 15px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Strong shadow for emphasis */
+            transition: transform 0.3s ease;
+            background-image: url('images/football-pattern.png'); /* Football-themed background pattern */
+            background-size: cover;
+            border: 8px solid #F5F5DC; /* Beige border around the frame */
+        }
+
+        #home .profile-frame img {
+            max-width: 350px; /* Significantly larger profile picture */
+            display: block;
+            margin: 0 auto;
+            border: none; /* No border around the image */
+        }
+
+        #home .profile-frame:hover {
+            transform: scale(1.05); /* Slightly enlarge the frame on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4A2E2E;
+            color: #F5F5DC;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 4px solid #800000; /* Matching border with the header */
+        }
+
+        footer p {
+            font-family: 'Copperplate', sans-serif;
+            color: #F5F5DC; /* Beige text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            #home h1 {
+                font-size: 2.4rem;
+            }
+
+            #home p {
+                font-size: 1.2rem;
+            }
+
+            #home .profile-frame img {
+                max-width: 250px; /* Adjust the profile picture size on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Welcome to My Personal Profile</h1>
+            <p>Hi! I'm Purwaj Bhandari, a professional footballer.</p>
+            <div class="profile-frame">
+                <img src="purwaj.jpg" alt="Profile Picture">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Purwaj Bhandari. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio showcasing projects and contact information.">
+    <title>Portfolio - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica:wght@400;700&family=Copperplate&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #F5F5DC; /* Beige background */
+            color: #4A2E2E; /* Maroon text */
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        header {
+            background-color: #800000; /* Deep maroon background */
+            color: #F5F5DC; /* Beige text */
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid #4A2E2E; /* Vintage-style border */
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #F5F5DC;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #FFE4C4; /* Light beige hover effect */
+        }
+
+        main {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        #portfolio h1 {
+            font-size: 2.8rem;
+            color: #800000; /* Deep maroon */
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px #4A2E2E; /* Subtle shadow for a vintage feel */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between images */
+            margin-top: 2rem;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #800000; /* Deep maroon border */
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+
+        footer {
+            background-color: #4A2E2E;
+            color: #F5F5DC;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 4px solid #800000; /* Matching border with the header */
+        }
+
+        footer p {
+            font-family: 'Copperplate', sans-serif;
+            color: #F5F5DC; /* Beige text */
+            margin: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            #portfolio h1 {
+                font-size: 2.4rem;
+            }
+
+            .gallery img {
+                max-width: 100%; /* Ensure images fit within the container */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav role="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="portfolio">
+            <h1>My Portfolio</h1>
+            <div class="gallery">
+                <img src="futsal1.jpg" alt="Futsal Project 1">
+                <img src="futsal2.jpg" alt="Futsal Project 2">
+                <img src="futsal4.jpg" alt="Futsal Project 3">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Purwaj Bhandari. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Purwaj Bhandari</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Copperplate&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #F5F5DC; /* Beige background */
+            color: #4A2E2E; /* Maroon text */
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #800000; /* Deep maroon background */
+            color: #F5F5DC; /* Beige text */
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid #4A2E2E; /* Vintage-style border */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #F5F5DC;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #FFE4C4; /* Light beige hover effect */
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        #contact h1 {
+            font-size: 2.8rem;
+            color: #800000; /* Deep maroon */
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px #4A2E2E; /* Subtle shadow for a vintage feel */
+        }
+
+        #contact form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #F5F5DC;
+            border: 2px solid #800000; /* Deep maroon border */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Strong shadow for emphasis */
+        }
+
+        #contact label {
+            display: block;
+            font-family: 'Copperplate', sans-serif;
+            font-size: 1.2rem;
+            color: #4A2E2E; /* Maroon text */
+            margin-bottom: 8px;
+        }
+
+        #contact input[type="text"],
+        #contact input[type="email"],
+        #contact textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 2px solid #800000; /* Deep maroon border */
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        #contact input[type="submit"] {
+            background-color: #800000; /* Deep maroon button */
+            color: #F5F5DC; /* Beige text */
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #contact input[type="submit"]:hover {
+            background-color: #4A2E2E; /* Darker maroon on hover */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4A2E2E;
+            color: #F5F5DC;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 4px solid #800000; /* Matching border with the header */
+        }
+
+        footer p {
+            font-family: 'Copperplate', sans-serif;
+            color: #F5F5DC; /* Beige text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            #contact h1 {
+                font-size: 2.4rem;
+            }
+
+            #contact form {
+                padding: 15px;
+            }
+
+            #contact input[type="submit"] {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h1>Contact Me</h1>
+            <form action="mailto:purwajbhandari10@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <input type="submit" value="Send">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Purwaj Bhandari. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Personal Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Helvetica&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Copperplate&display=swap" rel="stylesheet">
+    <style>
+        /* Base Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Helvetica', sans-serif;
+            background-color: #F5F5DC; /* Beige background */
+            color: #4A2E2E; /* Maroon text */
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+
+        /* Header and Navigation */
+        header {
+            background-color: #800000; /* Deep maroon background */
+            color: #F5F5DC; /* Beige text */
+            padding: 1.5rem;
+            text-align: center;
+            border-bottom: 4px solid #4A2E2E; /* Vintage-style border */
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            color: #F5F5DC;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        nav ul li a:hover {
+            color: #FFE4C4; /* Light beige hover effect */
+        }
+
+        /* Main Content */
+        main {
+            padding: 3rem;
+            text-align: center;
+        }
+
+        #about h1 {
+            font-size: 2.8rem;
+            color: #800000; /* Deep maroon */
+            margin-bottom: 1.5rem;
+            text-shadow: 1px 1px 2px #4A2E2E; /* Subtle shadow for a vintage feel */
+        }
+
+        #about p {
+            font-family: 'Copperplate', sans-serif;
+            font-size: 1.4rem;
+            color: #4A2E2E; /* Maroon text */
+            margin-bottom: 2rem;
+            text-align: left; /* Align text to the left */
+            line-height: 1.8;
+        }
+
+        #about img {
+            max-width: 300px; /* Adjust size as needed */
+            border: 5px solid #800000; /* Deep maroon border */
+            border-radius: 10px;
+            margin: 15px;
+        }
+
+        #about .images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px; /* Space between images */
+        }
+
+        /* Footer */
+        footer {
+            background-color: #4A2E2E;
+            color: #F5F5DC;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1rem;
+            border-top: 4px solid #800000; /* Matching border with the header */
+        }
+
+        footer p {
+            font-family: 'Copperplate', sans-serif;
+            color: #F5F5DC; /* Beige text */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul li {
+                display: block;
+                margin: 15px 0;
+            }
+
+            #about h1 {
+                font-size: 2.4rem;
+            }
+
+            #about p {
+                font-size: 1.2rem;
+            }
+
+            #about img {
+                max-width: 250px; /* Adjust image size on smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h1>About Me</h1>
+            <p>Hello! I’m Purwaj Bhandari, a professional footballer from Kathmandu, Nepal. My journey started at Daffodil Boarding School, where I cultivated my passion for football, shaping my career with discipline and dedication.
+
+                Off the pitch, I enjoy drawing, movie reviews, and exploring various sports. Traveling also inspires me, offering new cultures and landscapes to discover.
+                
+                A devoted FC Barcelona fan, I admire Lionel Messi for his exceptional skill. My favorite food is pizza, perfect for recharging after training.
+                
+                Balancing my football career with diverse interests and adventures, I appreciate you getting to know me!
+                
+                
+                
+                </p>
+            <div class="images">
+                <img src="barca.jpg" alt="FC Barcelona">
+                <img src="messi1.jpg"Lionel Messi">
+                <img src="messi2.jpg"Lionel Messi"></div>
+                <img src="barca2.jpg" alt="FC Barcelona"> 
+            </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Purwaj Bhandari. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
